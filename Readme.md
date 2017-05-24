@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Олеся Шарахматова](https://up.htmlacademy.ru/adaptive/11/user/190451).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Мигаева] (https://htmlacademy.ru/profile/hatewait).
 
 ---
 
