@@ -1,0 +1,346 @@
+.about {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+.about__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+.about__item {
+  font-size: 17px;
+  line-height: 20px;
+}
+.add {
+  border: 1px solid black;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.add__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+.button {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #444444;
+  border: 1px solid black;
+}
+.color {
+  border: 1px solid black;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.color__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+.color__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+}
+.contacts {
+  font-family: "Open Sans", "Arial", sans-serif;
+  border: 1px solid black;
+}
+.contacts__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+.contacts__email-title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+.contacts__email-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+.contacts__address-title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+.contacts__address-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+.copyright__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+}
+.feedback {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+.feedback__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.feedback__text {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.feedback__user-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.feedback__user-account {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #444444;
+}
+.form__intro {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #444444;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+}
+.form__comment {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #444444;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.item {
+  border: 1px solid black;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000;
+}
+.item__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+.item__feature {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+}
+.item__price-value {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+}
+.items {
+  border: 1px solid black;
+}
+.mail {
+  border: 1px solid black;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.mail__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+.main-menu {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: 1px solid black;
+}
+.main-menu__link--light {
+  display: block;
+  background-color: #63d1bb;
+}
+.main-menu__link--dark {
+  display: block;
+  background-color: #56c3b2;
+}
+.main-nav {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: 1px solid black;
+}
+.main-nav__item {
+  padding-top: 33px;
+  padding-left: 75px;
+}
+.modal {
+  border: 1px solid black;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000;
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+.modal__subtitle {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+.name {
+  border: 1px solid black;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.name__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+.name__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+}
+.page-footer {
+  border: 1px solid black;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.page-header {
+  background-color: #ffffff;
+  border: 1px solid black;
+  padding: 10px;
+}
+.page-header__container {
+  border: 1px solid black;
+}
+.page-title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  border: 1px solid black;
+  background-color: #f1f1f1;
+}
+.phone {
+  border: 1px solid black;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.phone__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+.product {
+  font-family: "Open Sans", "Arial", sans-serif;
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+.product__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+.product__top {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #63d1bb;
+}
+.product__desc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+}
+.product__table {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+  border: 1px solid black;
+}
+.product__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #444444;
+}
+.production {
+  border: 1px solid black;
+}
+.production__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+.production__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #444444;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+}
+.promo {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  height: 300px;
+  border: 1px solid black;
+}
+.promo__heading {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  padding-top: 70px;
+  padding-left: 38px;
+}
+.type {
+  border: 1px solid black;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.type__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+.type__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/opensans.woff2") format("woff2"), url("/fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/opensansbold.woff2") format("woff2"), url("/fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}

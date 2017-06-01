@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Каталог товаров</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/190451-mishka/3/">
+</head>
+  <body>
+
+    <header class="page-header">
+      <div class="page-header__container">
+        <a class="logo" href="index.html">
+          <img class="logo__image" src="http://placehold.it/120x80" alt="Логотип Мишка">
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <div class="page-title">
+        <h1 class="page-title__catalog">Каталог товаров</h1>
+      </div>
+
+      <section class="items">
+        <div class="items__container">
+
+          <article class="item item--hare">
+            <a class="item__link item__link--hare" href="#">
+              <img class="item__image item__image--hare" src="http://placehold.it/260x200" alt="Зайчик-попрыгайчик">
+            </a>
+            <div class="item__desc item__desc--hare">
+              <div class="item__info item__info--hare">
+                <h2 class="item__title item__title--hare">
+                  <a class="item__link item__link--hare" href="#">Зайчик-попрыгайчик</a>
+                </h2>
+                <span class="item__feature item__feature--hare">Рост 30см, вес 200 г</span>
+              </div>
+              <div class="item__price item__price--hare">
+                <span class="item__price-value item__price-value--hare">1200 руб.</span>
+                <a class="button button--item-to-buy" href="#">В корзину</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="item item--laundry-basket ">
+            <a class="item__link item__link--laundry-basket" href="#">
+              <img class="item__image item__image--laundry-basket" src="http://placehold.it/260x200" alt="Корзинка для белья">
+            </a>
+            <div class="item__desc item__desc--laundry-basket">
+              <div class="item__info item__info--laundry-basket">
+                <h2 class="item__title item__title--laundry-basket">
+                  <a class="item__link item__link--laundry-basket" href="#">Корзинка для белья</a>
+                </h2>
+                <span class="item__feature item__feature--laundry-basket">Диаметр 15 см, высота 10 см</span>
+              </div>
+              <div class="item__price item__price--laundry-basket">
+                <span class="item__price-value item__price-value--laundry-basket">690 руб.</span>
+                <a class="button button--item-to-buy" href="#">В корзину</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="item item--toy-basket">
+            <a class="item__link item__link--toy-basket" href="#">
+              <img class="item__image item__image--toy-basket" src="http://placehold.it/260x200" alt="Большая корзинка для игрушек">
+            </a>
+            <div class="item__desc item__desc--toy-basket">
+              <div class="item__info item__info--toy-basket">
+                <h2 class="item__title item__title--toy-basket">
+                  <a class="item__link item__link--toy-basket" href="#">Большая корзинка для игрушек</a>
+                </h2>
+                <span class="item__feature item__feature--toy-basket">Диаметр 30 см, высота 30 см</span>
+              </div>
+              <div class="item__price item__price--toy-basket">
+                <span class="item__price-value item__price-value--toy-basket">1500 руб.</span>
+                <a class="button button--item-to-buy" href="#">В корзину</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="production">
+        <h2 class="production__title">Процесс производства</h2>
+        <video class="production__video" src="videofile.ogg" poster="http://placehold.it/260x180"></video>
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a href="#" class="button button--production">Сделать заказ</a>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <section class="social">
+          <a class="social__link social__link--inst" href="#">Instagram</a>
+          <a class="social__link social__link--fb" href="#">Facebook</a>
+          <a class="social__link social__link--tw" href="#">Twitter</a>
+        </section>
+        <section class="copyright">
+          <a class="copyright__text" href="#">Разработано</a>
+        </section>
+      </div>
+    </footer>
+
+    <section class="modal">
+      <div class="modal__overlay"></div>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="modal__container">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <span class="modal__subtitle">Выберите размер:</span>
+          <div class="modal__wrapper">
+            <input class="modal__input modal__input--s" id="size-s" type="radio" name="size" value="s" checked>
+            <label class="modal__label modal__label--s" for="size-s">S</label>
+            <input class="modal__input modal__input--m" id="size-m" type="radio" name="size" value="m">
+            <label class="modal__label modal__label--m" for="size-m">M</label>
+            <input class="modal__input modal__input--l" id="size-l" type="radio" name="size" value="l">
+            <label class="modal__label modal__label--l" for="size-l">L</label>
+          </div>
+          <a href="#" class="button button--modal">Добавить</a>
+        </div>
+      </form>
+    </section>
+
+  </body>
+</html>
