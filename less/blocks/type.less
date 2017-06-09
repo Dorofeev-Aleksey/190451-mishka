@@ -1,5 +1,10 @@
 .type {
-  border: @border;
+  border-top: 1px solid @turquoise;
+}
+
+.type__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .type__title {
@@ -13,4 +18,11 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+}
+@media @tablet {
+  .type__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60px;
+  }
 }

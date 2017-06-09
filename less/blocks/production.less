@@ -1,5 +1,12 @@
 .production {
-  border: @border;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ededed;
+  width: 260px;
+  margin-top: 30px;
+  margin-bottom: 58px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .production__title {
@@ -13,4 +20,37 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
+}
+
+@media @tablet {
+  .production {
+    align-items: center;
+    width: 667px;
+    height: 745px;
+  }
+  .production__video {
+    width: 667px;
+    height: 445px;
+  }
+}
+
+@media @desktop {
+  .production {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 1049px;
+    height: 455px;
+  }
+  .production__video {
+    order: -1;
+    width: 682px;
+    height: 445px;
+  }
+  .production__text {
+    width: 200px;
+  }
+
+
+
 }

@@ -1,5 +1,10 @@
 .feedback {
-  border: @border;
+}
+
+.feedback__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
 }
 
 .feedback__title {
@@ -14,6 +19,11 @@
   font-weight: 400;
 }
 
+.feedback__user-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .feedback__user-name {
   font-size: 17px;
   line-height: 24px;
@@ -25,4 +35,25 @@
   line-height: 30px;
   font-weight: 400;
   color: @grey;
+}
+
+@media @tablet {
+  .feedback__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 400px;
+  }
+  .feedback__title {
+    width: 250px;
+  }
+  .feedback__user-info {
+    width: 280px;
+  }
+  .feedback__text {
+    width: 650px;
+  }
+  .feedback__button-wrapper {
+    order: 1
+  }
 }

@@ -1,7 +1,25 @@
 .page-header {
-  border: @border;
+  min-height: 79px;
 }
 
 .page-header__container {
-  border: @border;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media @tablet {
+  .page-header {
+    min-height: 89px;
+  }
+  .page-header__container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media @desktop {
+  .page-header {
+    min-height: 89px;
+  }
 }

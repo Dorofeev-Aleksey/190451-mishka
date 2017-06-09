@@ -1,5 +1,10 @@
 .color {
-  border: @border;
+  border-top: 1px solid @turquoise;
+}
+
+.color__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .color__title {
@@ -13,4 +18,20 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+}
+
+@media @tablet {
+  .color__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60px;
+  }
+}
+
+@media @desktop {
+  .color__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 40px;
+  }
 }

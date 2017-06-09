@@ -1,5 +1,10 @@
 .mail {
-  border: @border;
+  border-top: 1px solid @turquoise;
+}
+
+.mail__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .mail__title {
@@ -7,4 +12,16 @@
   font-size: 17px;
   line-height: 16px;
   color: @turquoise;
+}
+
+@media @tablet {
+  .mail__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 150px;
+  }
+  .mail__title {
+    height: 150px;
+    margin-right: 100px;
+  }
 }

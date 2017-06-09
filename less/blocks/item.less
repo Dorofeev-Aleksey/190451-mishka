@@ -1,9 +1,14 @@
 .item {
-  border: @border;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ededed;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  width: 260px;
 }
 
 .item__image {
-  width: 260px;
+  width: 258px;
   height: 200px;
 }
 
@@ -11,16 +16,53 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  padding-left: 30px;
+}
+
+.item__link {
+  color: #000000;
+  text-decoration: none;
 }
 
 .item__feature {
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
+  padding-left: 30px;
 }
 
 .item__price-value {
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
+  padding-left: 30px;
+}
+
+@media @tablet {
+  .item {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 668px;
+    height: 330px;
+  }
+  .item__image {
+    width: 330px;
+    height: 330px;
+  }
+
+}
+
+@media @desktop {
+  .item {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 316px;
+    height: 700px;
+  }
+  .item__image {
+    width: 316px;
+    height: 462px;
+  }
+
 }

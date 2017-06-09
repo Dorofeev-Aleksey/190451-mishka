@@ -1,5 +1,10 @@
 .add {
-  border: @border;
+  border-top: 1px solid @turquoise;
+}
+
+.add__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .add__title {
@@ -7,4 +12,16 @@
   font-size: 17px;
   line-height: 16px;
   color: @turquoise;
+}
+
+@media @tablet {
+  .add__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 150px;
+  }
+  .add__title {
+    height: 150px;
+    margin-right: 100px;
+  }
 }

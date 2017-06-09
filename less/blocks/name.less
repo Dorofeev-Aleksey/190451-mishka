@@ -1,5 +1,10 @@
 .name {
-  border: @border;
+  border-top: 1px solid @turquoise;
+}
+
+.name__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .name__title {
@@ -13,4 +18,15 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+}
+
+@media @tablet {
+  .name__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+  }
+  .name__title {
+    height: 150px;
+  }
 }

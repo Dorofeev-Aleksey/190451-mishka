@@ -1,5 +1,10 @@
 .phone {
-  border: @border;
+  border-top: 1px solid @turquoise;
+}
+
+.phone__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .phone__title {
@@ -7,4 +12,16 @@
   font-size: 17px;
   line-height: 16px;
   color: @turquoise;
+}
+
+@media @tablet {
+  .phone__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50px;
+  }
+  .phone__title {
+    height: 50px;
+    margin-right: 100px;
+  }
 }

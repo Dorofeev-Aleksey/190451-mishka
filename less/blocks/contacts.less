@@ -1,12 +1,48 @@
 .contacts {
-  border: @border;
   color: @grey;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
 }
 
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
 .contacts__title {
   font-weight: 700;
   font-size: 18px;
+}
+
+@media @tablet {
+  .contacts__container  {
+    align-items: center;
+  }
+  .contacts__title {
+    align-self: flex-start;
+  }
+  .contacts__info {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+  }
+  .contacts__email {
+    width: 300px;
+  }
+  .contacts__address {
+    width: 700px;
+  }
+}
+
+@media @desktop {
+  .contacts__container {
+    height: 600px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contacts__info {
+    flex-direction: column;
+  }
 }

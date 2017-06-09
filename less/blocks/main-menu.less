@@ -2,10 +2,17 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  border: @border;
+}
+
+.main-menu__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-menu__link {
+  text-decoration: none;
+  color: #ffffff;
+  min-height: 103px;
   &--light {
   display: block;
   background-color: @turquoise;
@@ -13,5 +20,27 @@
   &--dark {
   display: block;
   background-color: @dark_turquoise;
+  }
+}
+
+.main-menu__title {
+  padding-left: 30px;
+}
+
+@media @tablet {
+  .main-menu__container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .main-menu__link  {
+    width: 335px;
+    min-height: 115px;
+  }
+}
+
+@media @desktop {
+  .main-menu__link  {
+    width: 526px;
+    min-height: 115px;
   }
 }

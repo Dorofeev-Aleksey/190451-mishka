@@ -1,6 +1,11 @@
 .about {
   font-weight: 700;
-  border: @border;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
 }
 
 .about__title {
@@ -8,7 +13,27 @@
   line-height: 30px;
 }
 
+.about__list {
+  padding-left: 25px;
+}
+
 .about__item {
   font-size: 17px;
   line-height: 20px;
+}
+
+@media @tablet {
+  .about__container{
+  height: 270px;
+}
+  .about__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 0
+  }
+  .about__item {
+    list-style: none;
+    height: 50px;
+  }
 }
