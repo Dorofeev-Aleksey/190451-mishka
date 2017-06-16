@@ -1,59 +1,121 @@
 .feedback {
+  width: 100%;
 }
 
 .feedback__container {
-  display: flex;
-  flex-direction: column;
-  padding-left: 30px;
+  position: relative;
+  .container();
+  padding: 27px 30px 30px 30px;
 }
 
 .feedback__title {
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
-.feedback__text {
+.feedback__item {
   font-size: 15px;
   line-height: 30px;
-  font-weight: 400;
 }
 
 .feedback__user-info {
-  display: flex;
-  flex-direction: column;
+  margin-top: 30px;
 }
 
 .feedback__user-name {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  font-style: normal;
 }
 
 .feedback__user-account {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   color: @grey;
+  display: block;
+  font-style: normal;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.feedback__button-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 28px 0 36px 0;
+}
+
+.feedback__button {
+  padding: 26px;
+  width: 50%;
+  font-size: 0;
+  border: 1px solid @grey;
+  cursor: pointer;
+  &--right {
+    border-left: none;
+  }
 }
 
 @media @tablet {
   .feedback__container {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 400px;
+    width: 768px;
+    padding: 77px 50px 50px 50px;
+    margin-bottom: 55px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
   }
+
   .feedback__title {
-    width: 250px;
+    margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .feedback__item {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .feedback__row-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feedback__user-name {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .feedback__user-account {
+    font-size: 17px;
+    line-height: 30px;
+    font-style: normal;
+  }
+
+  .feedback__button {
+    width: 100px;
+    }
+}
+
+@media @desktop {
+  .feedback__container {
+    width: 1150px;
+    padding: 70px 0 95px 175px;
+    }
+  .feedback__item {
+    padding-right: 80px;
+    margin-bottom: 38px;
   }
   .feedback__user-info {
-    width: 280px;
-  }
-  .feedback__text {
-    width: 650px;
+      width: 30%;
+
   }
   .feedback__button-wrapper {
-    order: 1
+    width: 175px;
   }
+
+
 }
