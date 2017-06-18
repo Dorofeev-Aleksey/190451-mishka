@@ -9,19 +9,43 @@
 </head>
   <body>
 
-    <header class="page-header">
+    <header class="page-header page-header--dark">
       <div class="page-header__container">
-        <a class="logo" href="index.html">
-          <img class="logo__image" src="http://placehold.it/120x80" alt="Логотип Мишка">
-        </a>
+        <div class="page-header__logo">
+          <a  href="index.html">
+            <img class="page-header__logo-image" src="http://placehold.it/120x80" alt="Логотип Мишка">
+          </a>
+        </div>
+
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a class="main-nav__link">Вязание на заказ</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+            <li class="main-nav__item  main-nav__logo">
+              <a class="main-nav__link main-nav__link--logo"></a>
+            </li>
+            <li class="main-nav__item main-nav__item--catalog main-nav__item--tablet-color">
+              <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item main-nav__item--form main-nav__item--tablet-color">
+              <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item main-nav__item--search">
+              <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item main-nav__item--basket">
+              <a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--desktop  main-nav__item--desktop-color">
+              <a class="main-nav__link  main-nav__link-new" href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--desktop  main-nav__item--desktop-color">
+              <a class="main-nav__link  main-nav__link-sale" href="#">Распродажа</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--tablet  main-nav__item--color">
+              <span class="main-nav__free">Бесплатная доставка по России</span>
+            </li>
           </ul>
         </nav>
+
       </div>
     </header>
 
@@ -40,13 +64,18 @@
         <div class="type">
           <div class="type__container">
             <h3 class="type__title">Тип</h3>
-            <div class="type__inner">
-              <input class="type__input type__input--radio" id="accessory" type="radio" name="type" value="accessory" checked>
-              <label for="accessory" class="type__label type__label--radio">Аксессуар для интерьера</label>
-            </div>
-            <div class="type__inner">
-              <input class="type__input type__input--radio" id="toy" type="radio" name="type" value="toy">
-              <label  for="toy" class="type__label type__label--radio">Детская игрушка</label>
+              <div class="type__wrapper">
+
+              <div class="type__inner">
+                <input class="type__input type__input--radio" id="accessory" type="radio" name="type" value="accessory" checked>
+                <label class="type__label type__label--radio" for="accessory">Аксессуар для интерьера</label>
+              </div>
+
+              <div class="type__inner">
+                <input class="type__input type__input--radio" id="toy" type="radio" name="type" value="toy">
+                <label class="type__label type__label--radio"  for="toy">Детская игрушка</label>
+              </div>
+
             </div>
           </div>
         </div>
@@ -54,47 +83,65 @@
         <div class="color">
           <div class="color__container">
             <h3 class="color__title">Цвет</h3>
-            <div class="color__inner">
-              <input class="color__input color__input--checkbox" type="checkbox" name="white" id="white" checked>
-              <label for="white" class="color__label color__label--checkbox color__label--white">Белый</label>
+            <div class="color__wrapper">
+
+              <div class="color__inner">
+                <input class="color__input color__input--checkbox" type="checkbox" name="white" id="white" checked>
+                <label for="white" class="color__label color__label--checkbox color__label--white">Белый</label>
+              </div>
+
+              <div class="color__inner">
+                <input class="color__input color__input--checkbox" type="checkbox" name="grey" id="grey" checked>
+                <label for="grey" class="color__label color__label--checkbox color__label--grey">Серый</label>
+              </div>
+
+              <div class="color__inner">
+                <input class="color__input color__input--checkbox" type="checkbox" name="tiffany" id="tiffany">
+                <label for="tiffany" class="color__label color__label--checkbox color__label--tiffany">«Тиффани»</label>
+              </div>
+
+              <div class="color__inner">
+                <input class="color__input color__input--checkbox" type="checkbox" name="black" id="black">
+                <label for="black" class="color__label color__label--checkbox color__label--black">Черный</label>
+              </div>
+
+              <div class="color__inner">
+                <input class="color__input color__input--checkbox" type="checkbox" name="pink" id="pink">
+                <label for="pink" class="color__label color__label--checkbox color__label--pink">Розовый</label>
+              </div>
+
+              <div class="color__inner">
+                <input class="color__input color__input--checkbox" type="checkbox" name="orange" id="orange">
+                <label for="orange" class="color__label color__label--checkbox color__label--orange">Оранжевый</label>
+              </div>
+
             </div>
 
-            <div class="color__inner">
-              <input class="color__input color__input--checkbox" type="checkbox" name="grey" id="grey" checked>
-              <label for="grey" class="color__label color__label--checkbox color__label--grey">Серый</label>
-            </div>
-
-            <div class="color__inner">
-              <input class="color__input color__input--checkbox" type="checkbox" name="tiffany" id="tiffany">
-              <label for="tiffany" class="color__label color__label--checkbox color__label--tiffany">«Тиффани»</label>
-            </div>
-
-            <div class="color__inner">
-              <input class="color__input color__input--checkbox" type="checkbox" name="black" id="black">
-              <label for="black" class="color__label color__label--checkbox color__label--black">Черный</label>
-            </div>
-
-            <div class="color__inner">
-              <input class="color__input color__input--checkbox" type="checkbox" name="pink" id="pink">
-              <label for="pink" class="color__label color__label--checkbox color__label--pink">Розовый</label>
-            </div>
-
-            <div class="color__inner">
-              <input class="color__input color__input--checkbox" type="checkbox" name="orange" id="orange">
-              <label for="orange" class="color__label color__label--checkbox color__label--orange">Оранжевый</label>
-            </div>
           </div>
         </div>
 
         <div class="name">
           <div class="name__container">
             <h3 class="name__title">ФИО</h3>
-            <label class="name__label name__label--text" for="name">Имя:</label>
-            <input class="name__input name__input--text" id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
-            <label class="name__label name__label--text" for="surname">Фамилия:</label>
-            <input class="name__input name__input--text" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
-            <label class="name__label name__label--text" for="father-name">Отчество:</label>
-            <input class="name__input name__input--text" id="father-name" type="text" name="father-name" placeholder="Отчество, если пожелаете">
+            <div class="name__wrapper">
+
+              <div class="name__inner">
+                <label class="name__label name__label--first-name" for="name">Имя:</label>
+                <input class="name__input name__input--first-name" id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
+              </div>
+
+              <div class="name__inner">
+                <label class="name__label name__label--second-name" for="surname">Фамилия:</label>
+                <input class="name__input name__input--second-name" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
+              </div>
+
+              <div class="name__inner">
+                <label class="name__label name__label--father-name" for="father-name">Отчество:</label>
+                <input class="name__input name__input--father-name" id="father-name" type="text" name="father-name" placeholder="Отчество, если пожелаете">
+             </div>
+
+           </div>
+
           </div>
         </div>
 
@@ -132,13 +179,18 @@
 
     <footer class="page-footer">
       <div class="page-footer__container">
+        <div class="page-footer__logo-block">
+          <a class="page-footer__logo"></a>
+        </div>
         <section class="social">
           <a class="social__link social__link--inst" href="#">Instagram</a>
           <a class="social__link social__link--fb" href="#">Facebook</a>
           <a class="social__link social__link--tw" href="#">Twitter</a>
         </section>
-        <section class="copyright">
-          <a class="copyright__text" href="#">Разработано</a>
+        <section class="page-footer_copyright">
+          <a class="page-footer__copyright-link" href="#">
+            <span>Разработано</span>
+          </a>
         </section>
       </div>
     </footer>
