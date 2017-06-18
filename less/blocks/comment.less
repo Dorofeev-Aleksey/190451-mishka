@@ -1,3 +1,18 @@
 .comment__container {
   .container();
 }
+
+@media @tablet {
+  .comment__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+@media @desktop {
+  .comment__container {
+    justify-content: flex-end;
+    padding-left: 225px
+  }
+}

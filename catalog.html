@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <header class="page-header">
+    <header class="page-header page-header--dark">
       <div class="page-header__container">
         <div class="page-header__logo">
           <a href="index.html">
@@ -20,11 +20,11 @@
           <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__logo">
               <a class="main-nav__link main-nav__link--logo"></a>
-           </li>
-            <li class="main-nav__item main-nav__item--catalog main-nav__item--tablet-incolor">
+            </li>
+            <li class="main-nav__item main-nav__item--catalog main-nav__item--tablet-color">
               <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="main-nav__item main-nav__item--form main-nav__item--tablet-incolor">
+            <li class="main-nav__item main-nav__item--form main-nav__item--tablet-color">
               <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item main-nav__item--search">
@@ -33,13 +33,13 @@
             <li class="main-nav__item main-nav__item--basket">
               <a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a>
             </li>
-            <li class="main-nav__item  main-nav__item--desktop  main-nav__item--desktop-incolor">
+            <li class="main-nav__item  main-nav__item--desktop  main-nav__item--desktop-color">
               <a class="main-nav__link  main-nav__link-new" href="#">Новые поступления</a>
             </li>
-            <li class="main-nav__item  main-nav__item--desktop  main-nav__item--desktop-incolor">
+            <li class="main-nav__item  main-nav__item--desktop  main-nav__item--desktop-color">
               <a class="main-nav__link  main-nav__link-sale" href="#">Распродажа</a>
             </li>
-            <li class="main-nav__item  main-nav__item--tablet  main-nav__item--incolor">
+            <li class="main-nav__item  main-nav__item--tablet  main-nav__item--color">
               <span class="main-nav__free">Бесплатная доставка по России</span>
             </li>
           </ul>
@@ -114,12 +114,24 @@
         </div>
       </section>
 
-      <section class="production">
-        <h2 class="production__title">Процесс производства</h2>
-        <video class="production__video" src="videofile.ogg" poster="http://placehold.it/260x180"></video>
-        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a href="#" class="button button--production">Сделать заказ</a>
-      </section>
+      <article class="production">
+        <div class="production__container">
+          <div class="production__wrapper-shadow">
+            <h3 class="production__title">
+                    Процесс производства
+                  </h3>
+            <div class="production__pic">
+              <img src="img/video-mobile@1x.jpg" alt="video" class="production__img">
+            </div>
+            <div class="production__wrapper">
+              <p class="production__description">
+                По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+              </p>
+              <a href="#" class="button  production__btn">Сделать заказ</a>
+            </div>
+          </div>
+        </div>
+      </article>
 
     </main>
 
