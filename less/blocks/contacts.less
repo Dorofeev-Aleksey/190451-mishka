@@ -1,12 +1,132 @@
 .contacts {
-  border: @border;
-  color: @grey;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
+  width: 100%;
+  position: relative;
+}
+
+.contacts__container {
+  .container();
 }
 
 .contacts__title {
-  font-weight: 700;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 28px 0 25px 0;
   font-size: 18px;
+}
+
+.contacts__info {
+  font-size: 15px;
+  line-height: 30px;
+  color: @grey;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 9px;
+}
+
+.contacts__email {
+  display: flex;
+}
+
+.contacts__email-title{
+  margin-right: 30px;
+  padding-bottom: 30px;
+  vertical-align: top;
+}
+
+.contacts__email-text{
+  padding-bottom: 30px;
+  vertical-align: top;
+  color: #000000;
+  text-decoration-color: @turquoise;
+}
+
+.contacts__address {
+  display: flex;
+}
+
+.contacts__address-title{
+  margin-right: 30px;
+  padding-bottom: 30px;
+  vertical-align: top;
+}
+
+.contacts__address-text{
+  margin-top: 0;
+  padding-bottom: 30px;
+  vertical-align: top;
+  width: 185px;
+  padding-right: 40px;
+}
+
+.contacts__map {
+  position: relative;
+  width: 100%;
+  height: 457px;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+}
+
+@media @tablet {
+  .contacts {
+     padding: 60px 0 47px 0;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    margin-bottom: 48px;
+  }
+
+  .contacts__info {
+    font-size: 17px;
+    line-height: 30px;
+    flex-direction: row;
+  }
+
+  .contacts__email {
+     width: 50%;
+  }
+
+  .contacts__address {
+     width: 50%;
+  }
+
+  .contacts__address-text {
+    width: 230px;
+    padding: 0;
+  }
+
+  .contacts__map-image {
+    height: 400px;
+  }
+
+}
+
+@media @desktop {
+  .contacts__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 72px 175px;
+    margin-bottom: 100px;
+  }
+
+  .contacts__title {
+    margin-top: 70px;
+    margin-bottom: 49px;
+    font-size: 53px;
+}
+
+  .contacts__info {
+    flex-direction: column;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 525px;
+    text-align: left;
+  }
+
 }

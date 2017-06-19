@@ -1,3 +1,8 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__intro {
   color: @grey;
   font-weight: 400;
@@ -10,4 +15,32 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+}
+
+@media @tablet {
+  .form__intro {
+    color: @grey;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .form__comment {
+    font-size: 17px;
+    line-height: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media @desktop {
+  .form__intro {
+    width: 1050px;
+    padding: 0 175px;
+  }
+
+  .form__comment {
+    padding-left: 140px;
+  }
 }

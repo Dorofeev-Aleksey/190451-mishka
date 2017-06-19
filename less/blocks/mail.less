@@ -1,10 +1,71 @@
 .mail {
-  border: @border;
+  margin-bottom: 50px;
+}
+
+.mail__container {
+  display: flex;
+  flex-direction: column;
+  .container();
 }
 
 .mail__title {
   font-weight: 700;
   font-size: 17px;
-  line-height: 16px;
+  line-height: 18px;
   color: @turquoise;
+  position: relative;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 62px;
+    width: 200px;
+    height: 1px;
+    background-color: @turquoise;
+  }
+}
+
+.mail__input {
+  padding-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+@media @tablet {
+  .mail {
+    background-color: #f1f1f1;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .mail__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .mail__title {
+    margin-right: 80px;
+    &::after {
+      display: none;
+    }
+  }
+
+  .mail__input {
+    width: 500px;
+    padding-left: 20px;
+    background-color: #f1f1f1;
+  }
+}
+
+
+@media @desktop {
+  .mail__title {
+    margin-right: 120px;
+  }
+
+  .mail__input {
+    width: 700px;
+  }
 }

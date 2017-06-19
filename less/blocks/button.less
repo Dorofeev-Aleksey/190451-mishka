@@ -1,7 +1,59 @@
 .button {
+  margin: 0 auto;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   color: @grey;
-  border: @border;
+  text-decoration: none;
+  border: 2px solid @grey;
+  height: 50px;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: transparent;
+  &:hover {
+    color: #ffffff;
+    background-color: @grey;
+  }
+  &:active {
+    color: #8d8d8d;
+    background-color: @grey;
+  }
+}
+
+
+@media @tablet {
+  .button {
+    &--feedback {
+      position: absolute;
+      top: 35px;
+      right: 50px;
+    }
+    &--form {
+      margin: 0;
+      }
+    &--product {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media @desktop {
+  .button {
+  &--feedback {
+    right: 0;
+    width: 175px;
+  }
+  &--contacts {
+    position: absolute;
+    top: 400px;
+    right: 700px;
+  }
+  &--product {
+    margin-top: 25px;
+  }
+ }
 }

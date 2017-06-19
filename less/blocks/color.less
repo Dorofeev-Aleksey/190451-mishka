@@ -1,16 +1,146 @@
 .color {
-  border: @border;
+  margin-bottom: 50px;
+}
+
+.color__container {
+  display: flex;
+  flex-direction: column;
+  .container();
+}
+
+.color__inner {
+  margin-bottom: 40px;
 }
 
 .color__title {
   font-weight: 700;
   font-size: 17px;
-  line-height: 16px;
+  line-height: 18px;
   color: @turquoise;
+  position: relative;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 62px;
+    width: 200px;
+    height: 1px;
+    background-color: @turquoise;
+  }
 }
 
 .color__label {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+  &--checkbox {
+    position: relative;
+    padding: 21px 30px 22px 60px;
+    cursor: pointer;
+  }
+  &--checkbox::before {
+   content: "";
+   position: absolute;
+   top: 10px;
+   left: 0;
+   width: 34px;
+   height: 34px;
+   border: 2px solid #444444;
+  }
+  &--checkbox:hover::before {
+    border-color: #62d1ba;
+  }
+  &--checkbox:active::before {
+    border-color: #c7c7c7;
+  }
+  &--checkbox::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 8px;
+    display: none;
+    width: 20px;
+    height: 10px;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    transform: rotate(-45deg);
+  }
+  &--checkbox:active::after {
+    display: block;
+  }
 }
+
+.color__input {
+  &--checkbox {
+    display: none;
+  }
+  &--checkbox:checked + .color__label--checkbox::after{
+    display: block;
+  }
+  &--checkbox:checked + .color__label--checkbox:active::after {
+    display: none;
+  }
+
+}
+
+@media @tablet {
+  .color {
+    background-color: #f1f1f1;
+    padding-top: 50px;
+  }
+
+  .color__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .color__title {
+    margin-top: 0;
+    margin-right: 90px;
+
+    &::after {
+      display: none;
+    }
+}
+
+.color__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.color__inner {
+  width: 230px;
+  margin-bottom: 60px;
+}
+
+.color__label--checkbox{
+  width: 240px;
+  padding: 29px 30px 29px 81px;
+  &::before {
+    top: 12px;
+    width: 50px;
+    height: 48px;
+}
+  &::after {
+    top: 27px;
+    left: 12px;
+    width: 28px;
+    height: 13px;
+    }
+  }
+}
+
+@media @desktop {
+  .color__wrapper {
+    width: 740px;
+    }
+
+  .color__title {
+    margin-right: 130px;
+    }
+
+  }
