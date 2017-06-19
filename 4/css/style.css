@@ -210,6 +210,9 @@
   .button--form {
     margin: 0;
   }
+  .button--product {
+    margin-top: 10px;
+  }
 }
 @media (min-width: 1150px) {
   .button--feedback {
@@ -220,6 +223,9 @@
     position: absolute;
     top: 400px;
     right: 700px;
+  }
+  .button--product {
+    margin-top: 25px;
   }
 }
 .color {
@@ -824,6 +830,8 @@
         flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -ms-flex-align: stretch;
+        align-items: stretch;
   }
 }
 .mail {
