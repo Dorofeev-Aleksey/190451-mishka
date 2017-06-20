@@ -10,11 +10,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  .container();
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .promo__heading {
-  .container;
-  padding: 70px 30px;
   text-align: center;
   justify-content: center;
   font-weight: 700;
@@ -23,22 +24,22 @@
 }
 
 @media @tablet {
-  .promo__heading {
+  .promo__container {
     padding-top: 100px;
-    padding-right: 200px;
-    padding-left: 200px;
     padding-bottom: 230px;
+  }
+  .promo__heading {
     font-size: 43px;
     line-height: 50px;
   }
 }
 
 @media @desktop {
-  .promo__heading {
+  .promo__container {
     padding-top: 150px;
-    padding-right: 200px;
-    padding-left: 200px;
     padding-bottom: 450px;
+  }
+  .promo__heading {
     font-size: 53px;
     line-height: 57px;
   }
