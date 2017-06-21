@@ -90,7 +90,13 @@
             </table>
           </div>
           <div class="product__image-container">
-            <img class="product__image" src="http://placehold.it/260x315" alt="Вязаные корзинки">
+
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+            </picture>
+
           </div>
           <div class="product__buy">
             <span class="product__price">Цена: 990 руб.</span>
@@ -147,7 +153,6 @@
           </div>
          </div>
           <div class="contacts__map">
-            <img class="contacts__map-image" src="http://placehold.it/320x460" alt="Карта">
           </div>
           <a href="#" class="button button--contacts">Напишите нам</a>
         </div>
