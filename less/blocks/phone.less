@@ -3,6 +3,7 @@
 }
 
 .phone__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   .container();
@@ -31,6 +32,15 @@
   padding-bottom: 20px;
   border: none;
   border-bottom: 2px solid #000000;
+}
+
+.phone__icon {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  width: 25px;
+  height: 25px;
+  fill: #b2b2b2;
 }
 
 @media @tablet {

@@ -7,6 +7,12 @@
   .container();
 }
 
+.contacts__icon-flag {
+  position: absolute;
+  width: 47px;
+  height: 82px;
+}
+
 .contacts__title {
   padding-right: 30px;
   margin: 28px 0 25px 0;
@@ -84,10 +90,20 @@
   }
 }
 
+@media @mobile_only {
+  .contacts__icon-flag {
+    display: none;
+  }
+}
+
 @media @tablet {
   .contacts__container {
     padding-top: 60px;
     padding-bottom: 47px;
+  }
+
+  .contacts__icon-flag {
+    right: 200px
   }
 
   .contacts__title {
@@ -138,7 +154,15 @@
     justify-content: space-between;
     padding-top: 0;
     padding-bottom: 72px;
+    padding-left: 200px;
     margin-bottom: 200px;
+
+  }
+
+  .contacts__icon-flag {
+    top: 80px;
+    left: 80px;
+
   }
 
   .contacts__title {

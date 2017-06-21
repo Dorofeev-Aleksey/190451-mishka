@@ -63,6 +63,22 @@
 }
 
 @media @tablet {
+  .product {
+    position: relative;
+    &::after {
+      position: absolute;
+      // height: 200px;
+      top: 0px;
+      width: 100%;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-position: top;
+
+
+      background-size: 80% 100%;
+      background-repeat: repeat-x;
+     }
+   }
+
   .product__container {
     position: relative;
     padding-top: 37px;

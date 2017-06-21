@@ -6,8 +6,16 @@
   .container();
 }
 
-.page-footer__logo-block {
-  display: none;
+.page-footer__logo-footer {
+  width: 102px;
+  height: 34px;
+  fill: #231f20;
+  &:hover {
+    fill: #46c1ae;
+  }
+  &:active {
+    fill: #bde3dd;
+  }
 }
 
 .page-footer__copyright {
@@ -27,6 +35,24 @@
   color: #000000;
   &:active {
     color:  #bfbfbf;
+  }
+}
+
+.page-footer__logo-htmlacademy {
+  width: 27px;
+  height: 35px;
+  fill: #63d1bb;
+  &:hover {
+    fill: #46c1ae;
+  }
+  &:active {
+    fill: #bde3dd;
+  }
+}
+
+@media @mobile_only {
+  .page-footer__logo-block {
+    display: none;
   }
 }
 

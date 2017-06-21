@@ -22,6 +22,32 @@
   line-height: 24px;
 }
 
+.production__pic {
+  position: relative;
+}
+
+.production__icon-play {
+  position: absolute;
+  left: 80px;
+  top: 30px;
+  width: 101px;
+  height: 77px;
+  fill: #62d1ba;
+  &:hover {
+    transform: scale(1.2);
+  }
+  &:active {
+    transform: scale(0.8);
+    fill: #d0f1ea;
+  }
+}
+
+.production__icon-video {
+  width: 32px;
+  height: 32px;
+  fill: #63d1bb;
+}
+
 @media @tablet {
   .production__wrapper-shadow {
     display: flex;
@@ -35,6 +61,11 @@
   }
   .production__wrapper {
     order: 3;
+  }
+
+  .production__icon-play {
+    left: 290px;
+    top: 210px;
   }
 }
 
@@ -68,5 +99,9 @@
     width: 245px;
     padding-left: 22px;
     padding-top: 132px;
+  }
+
+  .production__icon-video {
+    display: block;
   }
 }
