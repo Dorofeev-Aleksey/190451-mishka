@@ -38,7 +38,7 @@
   vertical-align: top;
 }
 
-.contacts__email-text{
+.contacts__email-text {
   padding-bottom: 30px;
   vertical-align: top;
   color: #000000;
@@ -87,6 +87,7 @@
 (min-resolution: 1.5dppx) {
   .contacts__map {
     background-image: url("../img/map-mobile@2x.jpg");
+    background-size: cover;
   }
 }
 
@@ -97,6 +98,10 @@
 }
 
 @media @tablet {
+  .contacts {
+    .line();
+  }
+
   .contacts__container {
     padding-top: 60px;
     padding-bottom: 47px;
@@ -142,6 +147,7 @@
   (min-resolution: 1.5dppx) {
     .contacts__map {
       background-image: url("../img/map-tablet@2x.jpg");
+      background-size: cover;
       }
     }
 

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      document.createElement("picture");
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
 
@@ -206,63 +210,64 @@
 
 <!-- /svg sprite -->
 
-    <header class="page-header">
-      <div class="page-header__container">
+<header class="page-header">
+  <div class="page-header__container">
 
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item  main-nav__logo">
-              <div class="page-header__logo-block">
-                <a>
-                  <svg class="page-header__logo page-header__logo--mobile">
-                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-mobile"/>
-                  </svg>
+    <a class="page-header__logo-block">
+      <svg class="page-header__logo page-header__logo--mobile">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-mobile" />
+      </svg>
 
-                  <svg class="page-header__logo page-header__logo--tablet">
-                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-tablet"/>
-                  </svg>
+      <svg class="page-header__logo page-header__logo--tablet">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-tablet" />
+      </svg>
 
-                  <svg class="page-header__logo page-header__logo--desktop">
-                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-desktop"/>
-                  </svg>
-                </a>
-              </div>
-           </li>
-            <li class="main-nav__item main-nav__item--catalog main-nav__item--tablet-incolor">
-              <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item main-nav__item--form main-nav__item--tablet-incolor">
-              <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="main-nav__item main-nav__item--search">
-              <a class="main-nav__link main-nav__link--search" href="#">
-                <svg class="main-nav__icon-search">
-               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"/>
-                </svg>
-                Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item main-nav__item--basket">
-              <a class="main-nav__link main-nav__link--basket" href="#">
-                <svg class="main-nav__icon-cart">
-               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"/>
-                </svg>Корзина: пока пуста</a>
-            </li>
-            <li class="main-nav__item  main-nav__item--desktop  main-nav__item--desktop-incolor">
-              <a class="main-nav__link  main-nav__link-new" href="#">Новые поступления</a>
-            </li>
-            <li class="main-nav__item  main-nav__item--desktop  main-nav__item--desktop-incolor">
-              <a class="main-nav__link  main-nav__link-sale" href="#">Распродажа</a>
-            </li>
-            <li class="main-nav__item  main-nav__item--tablet  main-nav__item--incolor">
-              <span class="main-nav__free">Бесплатная доставка по России</span>
-            </li>
-          </ul>
-        </nav>
+      <svg class="page-header__logo page-header__logo--desktop">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-desktop" />
+      </svg>
+    </a>
 
-      </div>
-    </header>
+    <a href="#" class="main-nav__toggle  main-nav__toggle--nojs"></a>
 
-    <main class="main">
+    <!--main-nav--opened  main-nav--nojs-->
+  <nav class="main-nav  main-nav--closed  main-nav--nojs">
+    <ul class="main-nav__list">
+      <li class="main-nav__item  main-nav__logo">
+      </li>
+      <li class="main-nav__item main-nav__item--catalog main-nav__item--tablet-incolor">
+        <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
+      </li>
+      <li class="main-nav__item main-nav__item--form main-nav__item--tablet-incolor">
+        <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
+      </li>
+      <li class="main-nav__item main-nav__item--search">
+        <a class="main-nav__link main-nav__link--search" href="#">
+          <svg class="main-nav__icon-search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search" />
+          </svg>
+          Поиск по сайту</a>
+      </li>
+      <li class="main-nav__item main-nav__item--basket">
+        <a class="main-nav__link main-nav__link--basket" href="#">
+          <svg class="main-nav__icon-cart">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart" />
+          </svg>
+          Корзина: пока пуста</a>
+      </li>
+      <li class="main-nav__item  main-nav__item--desktop  main-nav__item--desktop-incolor">
+        <a class="main-nav__link  main-nav__link-new" href="#">Новые поступления</a>
+      </li>
+      <li class="main-nav__item  main-nav__item--desktop  main-nav__item--desktop-incolor">
+        <a class="main-nav__link  main-nav__link-sale" href="#">Распродажа</a>
+      </li>
+      <li class="main-nav__item  main-nav__item--tablet  main-nav__item--incolor">
+        <span class="main-nav__free">Бесплатная доставка по России</span>
+      </li>
+    </ul>
+  </nav>
+
+  </div>
+</header>
 
       <section class="promo">
         <div class="promo__container">
@@ -287,6 +292,7 @@
         </div>
       </section>
 
+    <main class="main">
       <section class="product">
         <div class="product__container">
           <div class="product__titles">
@@ -480,6 +486,8 @@
         </div>
       </form>
     </section>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>
