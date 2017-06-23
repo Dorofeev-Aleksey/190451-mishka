@@ -14,6 +14,7 @@
   margin-top: 40px;
   margin-bottom: 40px;
   background-color: transparent;
+  text-transform: uppercase;
   &:hover {
     color: #ffffff;
     background-color: @grey;
@@ -25,18 +26,33 @@
 }
 
 
+@media @mobile_only {
+  .button {
+    &--feedback {
+      margin-bottom: -5px;
+    }
+  }
+}
+
 @media @tablet {
   .button {
     &--feedback {
       position: absolute;
       top: 35px;
       right: 50px;
+      width: 180px;
+      margin-top: 80px;
     }
     &--form {
       margin: 0;
       }
     &--product {
       margin-top: 10px;
+      width: 290px;
+    }
+    &--contacts {
+      margin-top: 56px;
+      width: 230px;
     }
   }
 }
@@ -53,7 +69,11 @@
     left: 70px;
   }
   &--product {
-    margin-top: 25px;
+    margin-top: 12px;
+  }
+  &--contacts {
+    margin-top: -15px;
+    margin-left: 253px;
   }
  }
 }

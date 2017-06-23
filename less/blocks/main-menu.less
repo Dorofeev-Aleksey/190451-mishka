@@ -1,22 +1,25 @@
 .main-menu__container {
   display: flex;
   flex-direction: column;
+
 }
 
 .main-menu__link {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 12px;
+  padding-bottom: 14px;
   text-decoration: none;
   color: #ffffff;
-  padding-right: 200px;
-  min-height: 100px;
   &--light {
-  display: block;
-  background-color: @turquoise;
+    position: relative;
+    padding-top: 9px;
+    background-color: @turquoise;
   }
   &--dark {
-  display: block;
-  background-color: @dark_turquoise;
+    position: relative;
+    padding-top: 10px;
+    background-color: @dark_turquoise;
   }
   &--light:hover {
     background-color: #59d5bc;
@@ -33,13 +36,60 @@
 }
 
 .main-menu__title {
-  padding-left: 30px;
+  padding-left: 63px;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
+  width: 150px;
+}
+
+.main-menu__icon {
+  &--interior {
+    width: 40px;
+    height: 62px;
+    position: absolute;
+    top: 23px;
+    right: 68px;
+    fill: #3bb09d;
+  }
+  &--interior:hover {
+    fill: #29a592;
+  }
+  &--interior:active {
+    fill: #44c0aa;
+  }
+  &--toy {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    right: 57px;
+    fill: #35a999;
+  }
+  &--toy:hover {
+    fill: #239f8e;
+  }
+  &--toy:active {
+    fill: #37b2a0;
+  }
+}
+
+@media @mobile_only {
+  .main-menu__link {
+    margin-top: -58px;
+    margin-bottom: 58px;
+    z-index: 20;
+  }
 }
 
 @media @tablet {
+  .main-menu {
+      .zigzag();
+      position: relative;
+      padding-bottom: 35px;
+      margin-top: -120px;
+  }
+
   .main-menu__container {
     flex-direction: row;
     justify-content: center;
@@ -47,20 +97,50 @@
 
   .main-menu__link  {
     width: 335px;
-    min-height: 120px;
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 
   .main-menu__title {
     padding-left: 35px;
+    padding-top: 2px;
     font-size: 20px;
     line-height: 30px;
   }
-}
+
+
+  .main-menu__icon {
+    &--interior {
+      top: 30px;
+      right: 36px;
+    }
+    &--toy {
+      top: 30px;
+      right: 36px;
+    }
+    }
+  }
+
 
 @media @desktop {
+  .main-menu {
+  margin-top: -120px;
+  padding-bottom: 42px;
+  }
+
   .main-menu__link  {
     width: 526px;
-    min-height: 100px;
-    padding-right: 500px;
   }
-}
+
+  .main-menu__icon {
+    &--interior {
+      top: 30px;
+      right: 36px;
+    }
+    &--toy {
+      top: 30px;
+      right: 36px;
+    }
+    }
+  }
