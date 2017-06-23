@@ -1,10 +1,10 @@
 .feedback {
   width: 100%;
+  margin-bottom: 0
 }
 
 .feedback__container {
   position: relative;
-  .container();
   padding-top: 27px;
   padding-bottom: 30px;
 }
@@ -14,24 +14,29 @@
   margin-bottom: 25px;
 }
 
+.feedback__text {
+  font-size: 15px;
+  line-height: 30px;
+}
+
 .feedback__item {
   font-size: 15px;
   line-height: 30px;
 }
 
 .feedback__user-info {
-  margin-top: 30px;
+  margin-top: 27px;
 }
 
 .feedback__user-name {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   font-style: normal;
 }
 
 .feedback__user-account {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
   font-weight: 400;
   color: @grey;
@@ -55,17 +60,25 @@
 .feedback__button-wrapper {
   display: flex;
   flex-direction: row;
-  margin: 28px 0 36px 0;
+  margin: 28px 0 -2px 0;
 }
 
 .feedback__button {
-  padding: 26px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 38px;
   width: 50%;
   font-size: 0;
   border: 1px solid @grey;
   cursor: pointer;
   &--right {
     border-left: none;
+  }
+}
+
+@media @mobile_only {
+  .feedback__container {
+    .container();
   }
 }
 
@@ -77,8 +90,10 @@
     margin-bottom: 55px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50px 0px;
+    background-position: 0px 30px;
     background-size: 350px 547px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -87,22 +102,33 @@
   }
 }
 
-
   .feedback__title {
+    padding-top: 30px;
+    padding-left: 45px;
     margin-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .feedback__item {
+    padding-left: 48px;
+    padding-right: 48px;
+    width: 700px;
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .feedback__row-container {
     display: flex;
     justify-content: space-between;
+  }
+
+  .feedback__user-info {
+    margin-top: 42px;
+    padding-left: 50px;
   }
 
   .feedback__user-name {
@@ -117,8 +143,15 @@
     font-style: normal;
   }
 
+  .feedback__button-wrapper {
+    margin: 45px 50px -2px 0;
+  }
+
   .feedback__button {
     width: 100px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 33px;
     }
 }
 
@@ -127,19 +160,36 @@
     width: 1150px;
     padding-top: 70px;
     padding-bottom: 95px;
+    margin-top: -52px;
+    background-position: 50px 30px;
+    }
+
+  .feedback__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 220px;
     }
 
   .feedback__item {
-    padding-right: 80px;
     margin-bottom: 38px;
+    padding-left: 220px;
+    width: 800px;
   }
 
   .feedback__user-info {
       width: 30%;
+      padding-left: 220px;
   }
 
   .feedback__button-wrapper {
+    margin: -60px 50px 100px 0;
     width: 175px;
+  }
+
+  .feedback__button {
+    padding-top: 25px;
+    padding-bottom: 5px;
+    padding-left: 15px;
   }
 
 

@@ -1,15 +1,22 @@
 .about {
+  .line();
+  position: relative;
   width: 100%;
-  margin-bottom: 30px;
+
 }
 
 .about__container {
   .container();
+  position: relative;
+  padding-top: 10px;
+  margin-bottom: 30px;
 }
 
 .about__title {
-  margin-top: 10px;
   margin-bottom: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 .about__list {
@@ -21,7 +28,7 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  padding-top: 85px;
+  padding-top: 50px;
   list-style: none;
 }
 
@@ -32,6 +39,81 @@
   fill: #62d1ba;
 }
 
+
+@media @mobile_only {
+  .about__icon-feature-1 {
+    position: absolute;
+    top: 92px;
+    left: 37px;
+  }
+
+  .about__icon-feature-2 {
+    position: absolute;
+    top: 464px;
+    left: 31px;
+  }
+
+  .about__icon-feature-3 {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 207px;
+    left: 31px;
+  }
+
+  .about__icon-feature-4 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 575px;
+    left: 28px;
+  }
+
+  .about__icon-feature-5 {
+    position: absolute;
+    top: 340px;
+    left: 36px;
+  }
+
+    .about__icon-feature-6 {
+  position: absolute;
+  top: 707px;
+  left: 32px;
+  }
+
+  .about__item {
+    &--material {
+      width: 180px;
+      padding-top: 85px;
+    }
+
+    &--style {
+      width: 205px;
+      padding-top: 83px;
+    }
+
+    &--like {
+      width: 195px;
+      padding-top: 83px;
+    }
+
+    &--love {
+      width: 220px;
+      padding-top: 83px;
+    }
+
+    &--support {
+      width: 260px;
+      padding-top: 83px;
+    }
+
+    &--present {
+      width: 210px;
+      padding-top: 83px;
+    }
+  }
+}
+
 @media @tablet {
   .about {
     .line();
@@ -39,13 +121,15 @@
   }
 
   .about__container{
-    padding-top: 70px;
-    padding-bottom: 55px;
+    padding-top: 63px;
   }
 
   .about__title {
     margin: 0;
     padding-bottom: 16px;
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: 700;
   }
 
   .about__list {
@@ -53,6 +137,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
   .about__item {
     font-size: 20px;
     line-height: 22px;
@@ -63,26 +148,79 @@
     padding-bottom: 25px;
 
     &--material {
-      order: 0
+      order: 0;
+      width: 250px;
+      padding-top: 88px;
     }
     &--style {
       order: 2;
+      width: 280px;
+      padding-top: 86px;
     }
     &--like {
       order: 4;
+      width: 260px;
+      padding-top: 83px;
     }
 
     &--love {
       order: 1;
+      width: 335px;
+      padding-top: 87px;
     }
 
     &--support {
       order: 3;
+      width: 350px;
+      padding-top: 83px;
+      padding-left: 15px;
     }
 
     &--present {
       order: 5;
+      width: 335px;
+      padding-top: 83px;
     }
+  }
+
+  .about__icon-feature-1 {
+    position: absolute;
+    top: 163px;
+    left: 58px;
+  }
+
+  .about__icon-feature-2 {
+    position: absolute;
+    top: 163px;
+    right: 345px;
+  }
+
+  .about__icon-feature-3 {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 310px;
+    left: 52px;
+  }
+
+  .about__icon-feature-4 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 310px;
+    right: 335px;
+  }
+
+  .about__icon-feature-5 {
+    position: absolute;
+    top: 475px;
+    left: 57px;
+  }
+
+  .about__icon-feature-6 {
+  position: absolute;
+  bottom: 85px;
+  right: 345px;
   }
 }
 
@@ -90,9 +228,90 @@
   .about__container {
   padding-top: 82px;
   padding-bottom: 62px;
+  padding-left: 225px;
+  padding-right: 220px;
   }
 
-  .about__item{
-  padding-right: 40px;
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: 700;
   }
+
+  .about__item {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    list-style: none;
+    width: 50%;
+    margin-right: 20px;
+
+    &--material {
+      order: 0;
+      width: 250px;
+    }
+    &--style {
+      order: 2;
+      width: 280px;
+    }
+    &--like {
+      order: 4;
+      width: 260px;
+    }
+
+    &--love {
+      order: 1;
+      width: 335px;
+    }
+
+    &--support {
+      order: 3;
+      width: 350px;
+    }
+
+    &--present {
+      order: 5;
+      width: 335px;
+    }
+  }
+
+  .about__icon-feature-1 {
+    position: absolute;
+    top: 188px;
+    left: 233px;
+  }
+
+  .about__icon-feature-2 {
+    position: absolute;
+    top: 188px;
+    right: 537px;
+  }
+
+  .about__icon-feature-3 {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 330px;
+    left: 227px;
+  }
+  .about__icon-feature-4 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 330px;
+    right: 530px;
+  }
+
+  .about__icon-feature-5 {
+    position: absolute;
+    top: 496px;
+    left: 233px;
+  }
+
+  .about__icon-feature-6 {
+    position: absolute;
+    bottom: 145px;
+    right: 540px;
+  }
+
 }
